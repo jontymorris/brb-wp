@@ -37,4 +37,12 @@ function brb_enqueue_script() {
 }
 add_action('wp_enqueue_scripts', 'brb_enqueue_script');
 
+function brb_comment_fields($fields) {
+	if ( isset($fields['url']) )
+		unset($fields['url']);
+	
+	return $fields;
+}
+add_filter('comment_form_default_fields', 'brb_comment_fields');
+
 ?>

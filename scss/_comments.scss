@@ -1,0 +1,68 @@
+.comments-padding {
+    padding: 10px;
+}
+
+.comment-reply-title {
+    font-size: 1.2rem;
+}
+
+.comment-form {
+    width: 100%;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas:
+    'notes notes'
+    'comment author'
+    'comment email'
+    'comment consent'
+    'comment submit';
+
+    @media screen and (max-width: 900px) {
+        display: block;
+    }
+    
+    p, input, textarea {
+        width: 100%;
+    }
+    
+    .comment-notes {
+        grid-area: notes;
+    }
+
+    .comment-form-comment {
+        grid-area: comment;
+        margin-bottom: 10px;
+
+        textarea {
+            height: 90%;
+        }
+    }
+
+    .comment-form-author {
+        grid-area: author;
+        margin-bottom: 10px;
+    }
+
+    .comment-form-email {
+        grid-area: email;
+        margin-bottom: 10px;
+    }
+
+    .comment-form-cookies-consent {
+        grid-area: consent;
+        margin-bottom: 10px;
+
+        input {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        label {
+            display: inline;
+        }
+    }
+
+    .form-submit {
+        grid-area: submit;
+    }
+}

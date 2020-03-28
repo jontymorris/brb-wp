@@ -1,6 +1,6 @@
-<div class="row">
+<div class="row mt-3 comments-padding">
     <?php if ( have_comments() )  { ?>
-        <div class="col-md-7">
+        <div class="col-md-12">
             <?php wp_list_comments(
                 array(
                     'style' => 'ol',
@@ -10,13 +10,7 @@
         
         </div>
     <?php } ?>
-    <div class="col-md-5">
+    <div class="col-md-12">
         <?php comment_form(); ?>
     </div>
 </div>
-
-<?php
-
-    // existing comments
-    
-?>
