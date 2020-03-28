@@ -187,55 +187,25 @@ body {
   padding: 10px;
 }
 
+.comment-divider {
+  border-top: 1px solid #333333;
+}
+
 .comment-reply-title {
   font-size: 1.2rem;
 }
 
 .comment-form {
-  width: 100%;
-  display: grid;
-  grid-gap: 15px;
-  grid-template-areas: "notes notes" "comment author" "comment email" "comment consent" "comment submit";
-}
-@media screen and (max-width: 900px) {
-  .comment-form {
-    display: block;
-  }
+  width: 50%;
 }
 .comment-form p, .comment-form input, .comment-form textarea {
   width: 100%;
 }
-.comment-form .comment-notes {
-  grid-area: notes;
-}
-.comment-form .comment-form-comment {
-  grid-area: comment;
-  margin-bottom: 10px;
-}
-.comment-form .comment-form-comment textarea {
-  height: 90%;
-}
-.comment-form .comment-form-author {
-  grid-area: author;
-  margin-bottom: 10px;
-}
-.comment-form .comment-form-email {
-  grid-area: email;
-  margin-bottom: 10px;
-}
-.comment-form .comment-form-cookies-consent {
-  grid-area: consent;
-  margin-bottom: 10px;
-}
-.comment-form .comment-form-cookies-consent input {
-  width: auto;
-  margin-right: 10px;
-}
-.comment-form .comment-form-cookies-consent label {
-  display: inline;
+.comment-form textarea {
+  height: 100px;
 }
 .comment-form .form-submit {
-  grid-area: submit;
+  width: 100%;
 }
 
 #footer {
