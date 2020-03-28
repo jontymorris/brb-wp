@@ -1,0 +1,25 @@
+// Content
+
+#content {
+	background: $white;
+	padding: 100px 0 100px 0;
+	
+	@media (max-width: 1280px) and (min-width: 720px) {
+		padding: 50px 00px 50px 00px;
+	}
+
+	@media (max-width: 720px) {
+		padding: 40px 20px 40px 20px;
+	}
+
+	a {
+		color: #337ab7;
+	}
+	a:active {
+		color: #000000;
+	}
+
+	.elementor-button-text {
+		color: $white;
+	}
+}

@@ -1,0 +1,28 @@
+// Global
+
+@mixin font($size) {
+	font-size: $size;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: $size;
+	-ms-text-size-adjust: $size;
+}
+
+html {
+	@media(max-width: 1920px) {
+		@include font($normal-font);
+	}
+	@media(min-width: 1920px) {
+		@include font($large-font);
+	}
+
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	background: $black;
+}
+
+*:focus {
+	outline: none;
+}

@@ -1,0 +1,89 @@
+// Header
+
+#header {
+	width: 100%;
+
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	
+	.leading-text {
+		font-family: 'Skranji', cursive;
+		font-size: 4vw;
+		color: $orange;
+	}
+
+	.sub-text {
+		color: $white;
+		font-size: 2.5vw;
+
+		a {
+			padding: 10px;
+		}
+	}
+
+	#header-button {
+		background-color: $gray;
+		padding: 25px;
+		font-size: 25px;
+		border-radius: 5px;
+	}
+
+	#header-button:hover {
+		background-color: $dark-gray;
+	}
+
+	a {
+		color: $white;
+	}
+
+	a:hover {
+		text-decoration: none;
+		color: $white;
+	}
+
+	@media (max-width: 500px) {
+		.sub-text {
+			a {
+				display: block;	
+				padding: 3px 0px 3px 0px;
+			}
+		}
+	}
+
+	@media (max-width: 650px) {
+		.leading-text {
+			font-size: 35px;
+		}
+
+		.sub-text {
+			font-size: 25px;
+		}
+
+		#header-button {
+			font-size: 20px;
+		}
+
+		#header-sub {
+			display: none;
+		}
+	}
+
+	@media (min-width: 650px) and (max-width: 1000px) {
+		.leading-text {
+			font-size: 50px;
+		}
+
+		.sub-text {
+			font-size: 35px;
+		}
+
+		#header-sub {
+			display: none;
+		}
+	}
+}

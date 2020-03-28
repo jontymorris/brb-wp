@@ -1,0 +1,46 @@
+// Navigation
+
+#navigation {
+	z-index: 999;
+
+	.nav-link {
+		//color: #41ef00;
+		font-size: 25px;
+		padding: 10px 20px 10px 20px;
+	}
+
+	.nav-link:hover {
+		background-color: $gray;
+	}
+
+	@media(max-width: 1000px) {
+		background-color: $black;
+		position: relative;
+
+		#logo {
+			width: 75px;
+			padding: 10px;
+		}
+
+		.nav-link {
+			font-size: 20px;
+		}
+	}
+}
+
+.home-navigation {
+	position: absolute;
+
+	#logo {
+		width: 150px;
+	}
+}
+
+.sub-navigation {
+	position: relative;
+	background-color: $black;
+	
+	#logo {
+		width: 100px;
+	}
+}
