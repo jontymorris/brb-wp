@@ -198,6 +198,11 @@ body {
 .comment-form {
   width: 50%;
 }
+@media screen and (max-width: 900px) {
+  .comment-form {
+    width: 100%;
+  }
+}
 .comment-form p, .comment-form input, .comment-form textarea {
   width: 100%;
 }
