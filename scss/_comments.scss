@@ -1,13 +1,79 @@
-.comments-padding {
-    padding: 10px;
-}
-
 .comment-divider {
     border-top: 1px solid #333333;
+    padding: 10px;
 }
 
 .comment-reply-title {
     font-size: 1.2rem;
+}
+
+.depth-1 {
+    padding: 5px;
+    box-shadow: 2px 2px 5px #00000021;
+}
+
+.comment {
+    list-style-type: none;
+    background: #f3efef;
+    margin: 10px 0px;
+
+    a {
+        color: #6b6b6b !important;
+    }
+
+    .children {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    ol {
+        padding: 0px;
+        
+        ul {
+            margin-top: 5px;
+        }
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
+
+    .comment-author {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 25px;
+
+        img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .says {
+            display: none;
+        }
+    }
+
+    .comment-meta {
+        float: right;
+
+        a {
+            display: none;
+        }
+        
+        .comment-edit-link {
+            display: inline-block;
+        }
+
+        @media screen and (max-width: 900px) {
+            a {
+                display: none;
+            }
+            
+            .comment-edit-link {
+                display: inline-block;
+            }
+        }
+    }
 }
 
 .comment-form {
@@ -15,6 +81,10 @@
 
     @media screen and (max-width: 900px) {
         width: 100%;
+    }
+
+    .logged-in-as, label {
+        display: none;
     }
 
     p, input, textarea {

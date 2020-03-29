@@ -183,16 +183,69 @@ body {
   color: #ffffff;
 }
 
-.comments-padding {
-  padding: 10px;
-}
-
 .comment-divider {
   border-top: 1px solid #333333;
+  padding: 10px;
 }
 
 .comment-reply-title {
   font-size: 1.2rem;
+}
+
+.depth-1 {
+  padding: 5px;
+  box-shadow: 2px 2px 5px #00000021;
+}
+
+.comment {
+  list-style-type: none;
+  background: #f3efef;
+  margin: 10px 0px;
+}
+.comment a {
+  color: #6b6b6b !important;
+}
+.comment .children {
+  padding: 0px;
+  margin: 0px;
+}
+.comment ol {
+  padding: 0px;
+}
+.comment ol ul {
+  margin-top: 5px;
+}
+.comment p {
+  margin-bottom: 0px;
+}
+.comment .comment-author {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 25px;
+}
+.comment .comment-author img {
+  width: 35px;
+  height: 35px;
+}
+.comment .comment-author .says {
+  display: none;
+}
+.comment .comment-meta {
+  float: right;
+}
+.comment .comment-meta a {
+  display: none;
+}
+.comment .comment-meta .comment-edit-link {
+  display: inline-block;
+}
+@media screen and (max-width: 900px) {
+  .comment .comment-meta a {
+    display: none;
+  }
+  .comment .comment-meta .comment-edit-link {
+    display: inline-block;
+  }
 }
 
 .comment-form {
@@ -202,6 +255,9 @@ body {
   .comment-form {
     width: 100%;
   }
+}
+.comment-form .logged-in-as, .comment-form label {
+  display: none;
 }
 .comment-form p, .comment-form input, .comment-form textarea {
   width: 100%;
