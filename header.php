@@ -55,6 +55,7 @@
 						<a href="/butchery">Game Butcher</a>
 						<a href="/hunting-guide">Hunting Guide</a>
 						<a target="_blank" href="https://youtube.com/backridgebutcher">YouTuber</a>
+						<a href="/boneyard">Bone Yard</a>
 					</strong>
 				</div>
 			</div>
